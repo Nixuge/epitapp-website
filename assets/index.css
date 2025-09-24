@@ -1,0 +1,107 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: "Comfortaa", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+#title {
+    padding: 50px;
+    text-decoration: underline;
+    font-size: 300%;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+}
+
+#images {
+    position: relative;
+    left: 50px;
+    height: 600px;
+    width: 600px;
+
+}
+#images > img {
+    outline: 1px solid #fff;
+    height: 500px;
+    position: absolute;
+    transition: all .2s;
+    border-radius: 15px;
+}
+
+#zeus {
+    transform: rotate(-10deg);
+    left: 0;
+}
+#absences {
+    transform: rotate(20deg);
+    left: 180px;
+}
+#pegasus {
+    transform: rotate(5deg);
+    left: 90px;
+}
+
+
+#links {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 0px;
+    vertical-align: top;
+    margin-left: auto;
+    height: min-content;
+    z-index: 9999999;
+    align-items: center;
+}
+
+#logo {
+    background-image: url("epitapp-2025.png");
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    border-radius: 15px;
+    border: 1px solid #3e3e3e;
+}
+
+#badge-appstore {
+    background-image: url("AppStore.svg");
+    width: 240px;
+    height: 80px;
+    background-size: cover;
+}
+#badge-testflight {
+    background-image: url("testflight.png");
+    width: 238px;
+    height: 80px;
+    background-size: cover;
+    border: 1px solid #fff;
+    border-radius: 13px;
+}
+
+@media (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #links {
+        display: inline-block;
+        /* margin-left: 45px; */
+        vertical-align: top;
+        height: min-content;
+        flex-shrink: 0;
+    }
+    #links > * {
+        float: left;
+    }
+    #downloads {
+        margin-top: 30px;
+    }
+}
